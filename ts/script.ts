@@ -44,13 +44,6 @@ class MotherAccount extends SonAccount {
     interestPercentual: number = 10;
     calcInterest: number = 0;
 
-    // balanceInit: number;
-
-    // constructor(interestPercentual: number, balanceInit: number, balance: number) {
-    //     super(balanceInit, balance)
-    //     this.interestPercentual = interestPercentual
-    // }
-
     addInterest() {
         this.calcInterest = (this.balance * this.interestPercentual) / 100;
         console.log("tasso di interesse", this.calcInterest)
